@@ -1,0 +1,52 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+      <label>Webcam View - </label>
+      <b class="v">Rasberry Tea
+      <br><br>
+      Orange Spice Tea
+      <br><br>
+      Cozy Chamomile Tea 
+      <br><br>
+      Lemon Ginger
+      <br><br>
+      Peppermint Tea
+      <br><br>
+      Tea Mix
+      <br><br>
+      </b>
+      <div id="camera"></div>
+      <div id="dimes_n_money"></div>
+      <button class="btn btn-success" onclick="take_snapshot2()">Snap</button>
+      <p style="font-size: 22px;">Object : <span id="Im_A_Genius"></span>  </p>
+      <p style="font-size: 22px;">Accuracy : <span id="Im_Not_Really_A_Genius"></span> </p>
+    </center>
+    
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
